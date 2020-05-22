@@ -8,14 +8,9 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new TerserPlugin({
-        // extractComments: 'all',
-        // terserOptions: {
-        //   compress: {
-        //     drop_console: true,
-        //   }
-        // }
+        extractComments: 'all'
       }),
       new OptimizeCSSAssetsPlugin()
-    ],
-  },
+    ]
+  }
 });
