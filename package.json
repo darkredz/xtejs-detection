@@ -20,7 +20,7 @@
     "url": "git+https://github.com/takuya-motoshima/xtejs-detection.git"
   },
   "files": [
-    "dist/*.js",
+    "dist/",
     "types/*.d.ts",
     "package.json"
   ],
