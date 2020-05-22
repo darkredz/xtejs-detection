@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XteJS detection | Detect face of webcam example</title>
+  <link rel="stylesheet" type="text/css" href="dist/vendor.css">
+  <link rel="stylesheet" type="text/css" href="dist/detectFaceOfWebcam.css?<!--# config timefmt="%Y%m%d%H%I%M%S" --><!--# echo var="date_local" -->">
+</head>
+<body>
+  <div id="loader" class="loader loader-bar is-active" data-text data-rounded ></div>
+
+  <div class="container-fluid">
+    <div class="title-bar py-3">
+      <h2 class="title">Detect face in webcam</h2>
+      <div class="subtitle">Detect faces and landmarks in real time from webcam.</div>
+    </div>
+    <div class="console-panel">
+      <video class="webcam" id="webcam" playsinline muted></video>
+    </div>
+  </div>
+
+  <script type="module" src="dist/vendor.js"></script>
+  <script type="module" src="dist/detectFaceOfWebcam.js?<!--# config timefmt="%Y%m%d%H%I%M%S" --><!--# echo var="date_local" -->"></script>
+</body>
+</html>

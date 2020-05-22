@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XteJS detection | Detect face in video example</title>
+  <link rel="stylesheet" type="text/css" href="dist/vendor.css">
+  <link rel="stylesheet" type="text/css" href="dist/detectFaceInVideo.css?<!--# config timefmt="%Y%m%d%H%I%M%S" --><!--# echo var="date_local" -->">
+</head>
+<body>
+  <div id="loader" class="loader loader-bar is-active" data-text data-rounded ></div>
+  <div class="container-fluid">
+    <div class="title-bar py-3">
+      <h2 class="title">Detect face in video</h2>
+      <div class="subtitle">Detect faces and landmarks in real time from video.</div>
+    </div>
+    <div class="console-panel">
+      <div class="player-container">
+        <video class="player-video" id="video" src="dist/images/a-group-of-young-people-in-discussion.mp4" playsinline loop></video>
+        <footer class="player-footer">
+          <div class="player-progress">
+            <div class="player-progress-bar" id="progressBar"></div>
+          </div>
+          <div class="player-controls">
+            <button action-play class="play-button" played="false">
+              <svg viewBox="0 0 36 36">
+                <path data-state="playing" d="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26" />
+                <path data-state="paused" d="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28" />
+              </svg>
+            </button>
+            <div class="player-timeline">
+              <span class="current" id="current">0:00</span>
+              <span class="separator"> / </span>
+              <span class="duration" id="duration">0:00</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="dist/vendor.js"></script>
+  <script type="module" src="dist/detectFaceInVideo.js?<!--# config timefmt="%Y%m%d%H%I%M%S" --><!--# echo var="date_local" -->"></script>
+</body>
+</html>

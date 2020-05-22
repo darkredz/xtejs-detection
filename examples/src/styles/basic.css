@@ -1,0 +1,96 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~pure-css-loader/dist/css-loader.css';
+
+html {
+  font-family: HelveticaNeue-Light, "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", Helvetica, Tahoma, Geneva, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    overflow: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  overflow: hidden;
+  width: 5px;
+  background: #eee;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+  ::-webkit-scrollbar:horizontal {
+    height: 5px;
+  }
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-piece {
+  background: #eee;
+}
+
+  ::-webkit-scrollbar-piece:start {
+    background: #eee;
+  }
+
+::-webkit-scrollbar-thumb {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #cacaca;
+}
+
+::-webkit-scrollbar-corner {
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #cacaca;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+.loader,
+.loader::before,
+.loader::after {
+  position: absolute !important;
+}
+
+.vertical-border {
+  padding: 1px;
+  margin: 8px 15px 0 14px;
+  border-right: 1px solid #dadada;
+}
+
+.title-bar {
+  letter-spacing: 0.3px;
+  color: #3f3f3f;
+}
+
+  .title-bar .title {
+    line-height: 31px;
+    margin-bottom: 7px;
+  }
+
+  .title-bar .subtitle {
+    line-height: 21px;
+    margin-bottom: 12px;
+  }
+
+.console-panel {
+  position: relative;
+  background-color: #ffffff;
+}

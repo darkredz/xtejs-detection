@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XteJS detection | Detect face in image example</title>
+  <link rel="stylesheet" type="text/css" href="dist/vendor.css">
+  <link rel="stylesheet" type="text/css" href="dist/detectFaceInImage.css?<!--# config timefmt="%Y%m%d%H%I%M%S" --><!--# echo var="date_local" -->">
+</head>
+<body>
+  <div id="loader" class="loader loader-bar is-active" data-text data-rounded ></div>
+  <div class="container-fluid">
+    <div class="title-bar py-3">
+      <h2 class="title">Detect face in image</h2>
+      <div class="subtitle">Detect faces and landmarks from images.</div>
+    </div>
+    <div class="console-panel">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div class="photo-section-container">
+            <div class="image-holder">
+              <img class="image" id="image">
+            </div>
+            <div class="image-control py-3 px-2">
+              <div class="image-strip">
+                <h6>Select sample image</h6>
+                <div class="strip-container-scrollable">
+                  <ul id="stripContainer" class="strip-container">
+                    <li action-select-image class="strip-item selected"><img src="dist/images/female-license-1.png"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/female-license-2.png"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/woman-with-blinking-left-eye-1.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/woman-with-blinking-left-eye-2.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/woman-with-blinking-left-eye-3.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/woman-blinking-eyes.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/head-roll-to-left.png"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/head-roll-to-right.png"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/surprised-girl.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/astonished-kid.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/4-men-and-women.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/sporty-woman.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/six-men.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/4-men-and-women-2.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/family-of-four.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/little-brothers.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/couple-and-dog.jpg"></li>
+                    <li action-select-image class="strip-item"><img src="dist/images/young-woman.jpg"></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vertical-border"></div>
+              <div class="image-uploader">
+                <h6>Use any image</h6>
+                <label><span class="btn btn-outline-primary"><i class="fas fa-upload mr-1"></i>Upload<input action-upload-image type="file" class="d-none" accept="image/*"></span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h6 class="result-header py-3">Result</h6>
+          <div class="result-list" id="resultList">
+            <script id="template" type="text/html">
+              {{#each results}}
+                <div class="result">
+                  <img class="result-thumbnail" src="{{thumbnail}}">
+                  <div class="result-label-list">
+                    <div class="result-label">
+                      <div class="result-label-title">Head roll</div>
+                      <div class="result-label-value">{{round 2 roll}} degrees</div>
+                    </div>
+                    <div class="result-label">
+                      <div class="result-label-title">X</div>
+                      <div class="result-label-value">{{round 2 rect.x}} px</div>
+                    </div>
+                    <div class="result-label">
+                      <div class="result-label-title">Y</div>
+                      <div class="result-label-value">{{round 2 rect.y}} px</div>
+                    </div>
+                    <div class="result-label">
+                      <div class="result-label-title">Width</div>
+                      <div class="result-label-value">{{round 2 rect.width}} px</div>
+                    </div>
+                    <div class="result-label">
+                      <div class="result-label-title">Height</div>
+                      <div class="result-label-value">{{round 2 rect.height}} px</div>
+                    </div>
+                  </div>
+                </div>
+              {{/each}}
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="dist/vendor.js"></script>
+  <script type="module" src="dist/detectFaceInImage.js?<!--# config timefmt="%Y%m%d%H%I%M%S" --><!--# echo var="date_local" -->"></script>
+</body>
+</html>

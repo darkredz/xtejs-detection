@@ -1,0 +1,76 @@
+{
+  "name": "xtejs-detection",
+  "version": "1.0.0",
+  "description": "This package is a library that detects various things such as faces and licenses.",
+  "main": "dist/build.common.js",
+  "module": "dist/build.esm.js",
+  "browser": "dist/build.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "watch": "rollup -c --watch",
+    "prewatch": "rm -rf dist types && json2module package.json > src/package.ts",
+    "build": "rollup -c",
+    "prebuild": "rm -rf dist types && json2module package.json > src/package.ts",
+    "test": "jest",
+    "start": "ts-node -r tsconfig-paths/register -P tsconfig.json -O '{\"module\":\"commonjs\"}' -e \"import * as index from '~/index';console.log(index);\"",
+    "prestart": "json2module package.json > src/package.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takuya-motoshima/xtejs-detection.git"
+  },
+  "files": [
+    "dist/*.js",
+    "types/*.d.ts",
+    "package.json"
+  ],
+  "keywords": [
+    "browser",
+    "javascript",
+    "js",
+    "library",
+    "lib",
+    "module",
+    "typescript",
+    "ts",
+    "esm",
+    "es6"
+  ],
+  "author": "Takuya Motoshima <developer.takuyamotoshima@gmail.com> (https://twitter.com/TakuyaMotoshima)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takuya-motoshima/xtejs-detection/issues",
+    "email": "developer.takuyamotoshima@gmail.com"
+  },
+  "homepage": "https://github.com/takuya-motoshima/xtejs-detection#readme",
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "crypto": "^1.0.1",
+    "fetch-mock": "^8.3.2",
+    "javascript-obfuscator": "^0.25.4",
+    "jest": "^24.9.0",
+    "json2module": "0.0.3",
+    "rollup": "^1.32.1",
+    "rollup-plugin-cleanup": "^3.1.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@tensorflow-models/posenet": "^2.2.1",
+    "@tensorflow/tfjs": "^1.7.1",
+    "@tensorflow/tfjs-core": "^1.7.1",
+    "face-api.js": "^0.22.2",
+    "tensorflow-models": "0.0.1",
+    "tesseract.js": "^2.0.2",
+    "tfjs-image-recognition-base": "^0.6.2",
+    "xtejs-utils": "^1.0.10"
+  }
+}
