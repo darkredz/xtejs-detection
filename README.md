@@ -341,3 +341,12 @@ for (let result of results || []) {
 ## Examples
 
 There are some examples in "./examples" in this package.Here is the first one to get you started.
+
+## Credits
+
+The original model, weights, code, etc. was created by face-api.js and can be found at https://github.com/justadudewhohacks/face-api.js/
+This port and my work is in no way related to face-api.js.
+
+## License
+
+[MIT licensed](./LICENSE.txt)

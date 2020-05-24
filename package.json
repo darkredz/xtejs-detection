@@ -21,8 +21,8 @@
   },
   "files": [
     "dist/",
-    "types/*.d.ts",
-    "package.json"
+    "package.json",
+    "LICENSE.txt"
   ],
   "keywords": [
     "browser",
@@ -42,35 +42,5 @@
     "url": "https://github.com/takuya-motoshima/xtejs-detection/issues",
     "email": "developer.takuyamotoshima@gmail.com"
   },
-  "homepage": "https://github.com/takuya-motoshima/xtejs-detection#readme",
-  "devDependencies": {
-    "@types/jest": "^24.9.1",
-    "crypto": "^1.0.1",
-    "fetch-mock": "^8.3.2",
-    "javascript-obfuscator": "^0.25.4",
-    "jest": "^24.9.0",
-    "json2module": "0.0.3",
-    "rollup": "^1.32.1",
-    "rollup-plugin-cleanup": "^3.1.1",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-copy": "^3.3.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^5.3.0",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "ts-jest": "^24.3.0",
-    "ts-node": "^8.6.2",
-    "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "@tensorflow-models/posenet": "^2.2.1",
-    "@tensorflow/tfjs": "^1.7.1",
-    "@tensorflow/tfjs-core": "^1.7.1",
-    "face-api.js": "^0.22.2",
-    "tensorflow-models": "0.0.1",
-    "tesseract.js": "^2.0.2",
-    "tfjs-image-recognition-base": "^0.6.2",
-    "xtejs-utils": "^1.0.10"
-  }
+  "homepage": "https://github.com/takuya-motoshima/xtejs-detection#readme"
 }
