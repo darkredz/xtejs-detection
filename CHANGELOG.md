@@ -1,3 +1,7 @@
+## 1.0.4 (May 24, 2020)
+
+Fixed a bug that model manifest and weight could not be read.
+
 ## 1.0.3 (May 24, 2020)
 
 Added example to NPM package.
