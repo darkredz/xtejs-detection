@@ -22,7 +22,8 @@
   "files": [
     "dist/",
     "package.json",
-    "LICENSE.txt"
+    "LICENSE.txt",
+    "examples/"
   ],
   "keywords": [
     "browser",
