@@ -1,6 +1,6 @@
 {
   "name": "xtejs-detection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This package is a library that detects various things such as faces and licenses.",
   "main": "dist/build.common.js",
   "module": "dist/build.esm.js",
