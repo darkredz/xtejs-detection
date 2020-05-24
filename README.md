@@ -172,7 +172,7 @@ for (let result of results || []) {
         const detector = new FaceDetector(document.querySelector('#webcam'));
         ```
 
-    * <h4>Methots</h4>
+    * <h4>Methods</h4>
 
         * <h5>async attach(options)</h5>
 
@@ -312,7 +312,7 @@ for (let result of results || []) {
 
             A face image detected in Base64 format.
 
-    * <h4>Methots</h4>
+    * <h4>Methods</h4>
 
         * <h5>drawFaceRect()</h5>
 
