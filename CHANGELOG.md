@@ -1,3 +1,7 @@
+## 1.0.3 (May 24, 2020)
+
+Added example to NPM package.
+
 ## 1.0.2 (May 24, 2020)
 
 Added credit field to README and included license file in package.
